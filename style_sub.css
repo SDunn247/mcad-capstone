@@ -1,0 +1,361 @@
+@charset "UTF-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/*index page code starts here*/
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+header{
+	background-color: #fff;
+	width: 100%;
+	height: 100px;
+}
+
+header .header-brand{
+	font-family: Arial;
+	font-size: 24px;
+	font-weight: 900;
+	color: #111;
+	text-transform: uppercase;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 0;
+}
+
+header nav ul{
+	display: block;
+	margin: 0 auto;
+	width: fit-content;
+}
+
+header nav ul li{
+	display: line-block;
+	float: left;
+	list-style: none;
+	padding: 10px 16px 20px;
+}
+
+header nav ul li a{
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	color: #111;
+	text-transform: uppercase;
+}
+
+header img{
+	display: block;
+	margin: 0 auto;
+	width: 125px;
+	height: 75px;
+}
+
+
+@media only screen and (min-width: 1000px){
+	
+	header .header-brand{
+		margin: 31px 0 0;
+		text-align: left;
+		line-height: 38px;
+			padding: 0px 20px 0px 40px;
+		float: left;
+		border-right: 3px solid #111;
+	}
+	
+	header nav ul{
+		margin: 20px  0px 0px 20px;	
+		float: left;
+	}	
+		
+	header nav ul li{
+		display: inline-block;
+		float: left;
+	}
+	
+	header nav ul li a{
+		font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+		font-size: 16px;
+		color: #111;
+		line-height: 60px;
+	}
+	
+   header img{	
+	display: inline;
+	margin: 0 auto;
+	width: 125px;
+	height: 75px;
+	float: left;
+}
+	
+}
+
+
+/*styling for main content*/
+
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+}
+
+.main {
+  width: 100%;	
+  padding-bottom: 15px 0;
+  overflow:hidden;
+ /* Footer height */
+}
+
+.main p {
+font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+font-size: 13px;
+padding: 5px 20px 5px 20px;
+margin: 0 auto;
+width: fit-content;
+word-wrap: normal;
+line-height: 20px;
+}
+
+.main ul{
+	font-family: Arial;
+	font-size: 13px;
+	list-style: none;
+	text-indent: 1%;
+	line-height: 1.3;
+}
+
+h3, h4{
+	font-family: Arial;
+	font-size: 13px;
+}
+
+figure {
+    display: inline-block;
+    border: 0.5px solid #e0e0e0;
+    margin: 20px;
+}
+figure img {
+    vertical-align: top;
+	width: 205px;
+	height: auto;
+}
+figure figcaption {
+    border: 1px dotted #e0e0e0;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1000px){
+	
+	.wrapper{
+		width: 1000px;
+		margin: 0 auto;	
+	}	
+		
+}
+
+/*css styling for photo gallery - https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding-left: 60px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.column img {
+    transition:transform 0.55s ease;
+}
+
+.column img:hover {
+    -webkit-transform:scale(2.5);
+    transform:scale(2.5);
+}
+
+/*
+.column-1 {
+  flex: 25%;
+  max-width: 25%;
+  padding-left: 60px;
+}
+
+.column-1 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  horizontal-align: middle;
+  width: 100%;
+}
+
+.column-1 img {
+    transition:transform 0.55s ease;
+}
+
+.column-1 img:hover {
+    -webkit-transform:scale(2.5);
+    transform:scale(2.5);
+}
+*/
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/*footer styling*/
+
+footer{
+	width: calc(100%-80px);
+	padding: 40px 40px;
+	margin-top: 8px;
+	background-color: #111;
+	overflow: hidden;
+}
+
+footer ul{
+	width: fit-content;
+	float: left;
+	padding-left: 20px;
+}
+
+footer ul li{
+	display: block;
+	list-style: none;
+	line-height: 25px;
+	font-family: arial;
+	color: #2E2088;
+}
+
+footer ul li a{
+	font-family: arial;
+	font-size: 16px;
+	color: #fff;	
+}
